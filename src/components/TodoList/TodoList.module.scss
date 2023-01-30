@@ -1,0 +1,14 @@
+@import '../../styles/variables';
+
+.wrap {
+  width: 100%;
+  height: auto;
+  max-height: 400px;
+  overflow: auto;
+  border: 1px solid $border-color;
+  border-radius: $global-radius;
+  .no__data {
+    padding: 15px;
+    text-align: center;
+  }
+}

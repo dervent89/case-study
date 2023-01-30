@@ -1,0 +1,46 @@
+@import '../../styles/variables';
+
+.form {
+  width: 100%;
+  display: grid;
+  grid-template-columns: 1fr 80px;
+  gap: 10px;
+  border: 1px solid $border-color;
+  padding: 10px;
+  border-radius: $global-radius;
+  input {
+    height: 40px;
+    background: none;
+    border: none;
+    padding: 0;
+    margin: 0;
+    text-indent: 5px;
+    outline: none;
+    font-size: 1.1em;
+    font-weight: 400;
+    &::placeholder {
+      color: darken($border-color, 20%);
+    }
+    &:focus {
+      outline: none;
+    }
+  }
+  button {
+    height: 40px;
+    background-color: $success-color;
+    border: none;
+    color: $white-color;
+    font-size: 1em;
+    font-weight: 400;
+    border-radius: $global-radius;
+    transition: all 0.2s ease-in-out;
+    cursor: pointer;
+    &:hover {
+      background-color: darken($success-color, 10%);
+    }
+    &:disabled {
+      background-color: $border-color;
+      color: darken($border-color, 20%);
+    }
+  }
+}
